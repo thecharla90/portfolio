@@ -1,6 +1,6 @@
 @charset "UTF-8";
-#about{
-	background-color:#65C1D3;
+body{
+	background-color:#98CDE9;
 	background-repeat:no-repeat;
 	background-size: auto;
 	font-family: source-sans-pro, sans-serif;
@@ -8,3 +8,136 @@
 	font-style: normal;
 }
 
+.homeimg after{  
+  content: "";
+  clear: both;
+  display: flex;
+  } 
+ 
+.homeimg img{
+  	float: left;
+  	width: 700px;
+  	padding: 5px;
+	margin-right: 100px;
+}
+
+#hometitle{
+	font-size: 50px;
+	color: #064159;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
+	text-align: center;
+	
+}
+#hometext{
+	font-size: 27px;
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+}
+
+
+
+.expbutton{
+  	appearance: none;
+  	background-color: #FFFFFF;
+  	border-radius: 40em;
+  	border-style: none;
+  	box-shadow: #ADCFFF 0 -12px 6px inset;
+  	box-sizing: border-box;
+  	color: #000000;
+  	cursor: pointer;
+  	display: inline-block;
+  	font-family: 'EB Garamond', serif;
+  	font-size: 20px;
+  	font-weight: 500;
+  	letter-spacing: -.24px;
+  	margin: 0;
+  	outline: none;
+  	padding: 1rem 1.3rem;
+  	quotes: auto;
+  	text-align: center;
+  	text-decoration: none;
+  	transition: all .15s;
+  	user-select: none;
+  	-webkit-user-select: none;
+  	touch-action: manipulation;
+}
+
+.expbutton:hover {
+  	background-color: white;
+  	box-shadow: #ADCFFF 0 -6px 8px inset;
+  	transform: scale(1.125);
+}
+
+.expbutton:active {
+  	transform: scale(1.025);
+}
+
+@media {
+  .expbutton {
+    	font-size: 1.5rem;
+    	padding: .75rem 2rem;
+  }
+}
+
+footer .fa {
+ 	padding: 20px;
+ 	font-size: 30px;
+  	width: 30px;
+  	text-align: center;
+  	text-decoration: none;
+  	margin: 5px 2px;
+  	border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.10;
+}
+
+ul {
+	font-family: 'EB Garamond', serif;
+  	font-size: 17px;
+  	font-weight: 400;
+  	list-style-type: none;
+ 	 margin: 0;
+ 	 padding: 0;
+ 	 overflow: hidden;
+  background-color: #1A3338;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #CCF5FE;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #628FAD;
+}
+
+.active {
+  background-color: #DDF4F9;
+	color: #1A3338;
+}
+
+#homehead a{
+	color: #1A3338;
+  	text-decoration: none;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 600;
+}
+#homehead a:hover{
+	color: #CCF5FE;
+  	text-decoration: none;
+}
+
+.work {
+  column-count: 3;
+}
+ 
