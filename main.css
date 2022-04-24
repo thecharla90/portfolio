@@ -141,3 +141,21 @@ li a:hover:not(.active) {
   column-count: 3;
 }
  
+.work img{
+	width:550px;
+	height:500px;
+}
+
+#work1,#work2,#work3 {
+  position: relative;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.work {
+  display: flex;
+}
+
+#work1,#work2,#work3 {
+  flex: 33.33%;
+  padding: 5px;
+}
