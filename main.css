@@ -147,21 +147,26 @@ li a:hover:not(.active) {
   	text-decoration: none;
 }
 
-.work1,.work2,.work3 {
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.work{
+  margin: 10px -16px;
+}
+
+.work,
+.work > .column {
+  padding: 8px;
+}
+
+.column {
   float: left;
-  width: 25%;
-  padding: 10px;
+  width: 33.33%;
+  display: none; 
 }
-
-.work1,.work2,.work3 img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
-
-.work1,.work2,.work3 img:hover {
-  opacity: 1;
-}
-
 
 .work:after {
   content: "";
@@ -169,24 +174,28 @@ li a:hover:not(.active) {
   clear: both;
 }
 
-.container {
-  position: relative;
-  display: none;
+.content {
+  background-color: white;
+  padding: 10px;
 }
 
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
+.show {
+  display: block;
 }
 
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
