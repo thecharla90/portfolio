@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>work</title>
 		<link href="main.css" type="text/css" rel="stylesheet">
+		<script src="script.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -20,23 +21,32 @@
   	<li><a href="#contact">Contact</a></li>
 			</ul>	</header>
 <br><br><br><br><br>
+	
 <div class="work">
 	
-	<div id="work1"><a href=""><img src="Assets/Images/TheKilling/logo.png" alt="logox"></a>
-		<h3 id="work1text">Web Design: The Killing</h3>		
-	</div>
+  <div class="work1">
+    <a href="thekilling.html"><img src="Assets/Images/TheKilling/logo.png" alt="Web Design: The Killing" onclick="myFunction(this);">
+	</a>
+  </div>
 	
-	<div id="work2"><a href=""><img src="Assets/Images/DesignProject/businesscard.jpg" alt="logodesign"></a>
-		<h3 id="work2text">Design Project</h3>	
-	</div>
+  <div class="work2">
+    <a href="thekilling.html"><img src="Assets/Images/DesignProject/businesscard.jpg" alt="Design Project: Rebranding" onclick="myFunction(this);">
+	</a>
+  </div>
 	
-	<div id="work3"><a href=""><img src="Assets/Images/Photography/portrait3.jpeg" alt="portrait"></a>
-		<h3 id="work3text">Photography</h3>	
-	</div>
-		
-</div>
+  <div class="work3">
+    <a href="thekilling.html"><img src="Assets/Images/Photography/portrait3.jpeg" alt="Photography" style="width:100%" onclick="myFunction(this);">
+	</a>
+  </div>
+  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>	
 
-	
+
+</div>	
 	
 	
 	
