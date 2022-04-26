@@ -12,15 +12,22 @@ body{
 	x-overflow: hidden;
 	y-overflow:hidden;
 }
+.work{
+	margin: 0;
+	width:100%;
+	height:100%;
+	x-overflow: hidden;
+	y-overflow:hidden;
+}
 
 @media only screen and (max-width: 1500px) {
-        html, body {                 
+	html, body, .work  {          
                 margin-left:2%;
                 margin-right:2%;                 
     }
  }
 @media only screen and (min-width:1501px) {
-html, body {
+html, body, .work{ 
             margin-left:5%;
             margin-right:5%;
     }
