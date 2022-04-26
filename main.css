@@ -13,11 +13,17 @@ body{
 	y-overflow:hidden;
 }
 
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+@media only screen and (max-width: 1500px) {
+        html, body {                 
+                margin-left:2%;
+                margin-right:2%;                 
+    }
+ }
+@media only screen and (min-width:1501px) {
+html, body {
+            margin-left:5%;
+            margin-right:5%;
+    }
 }
 
 .homeimg after{  
