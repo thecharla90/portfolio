@@ -30,7 +30,7 @@ body{
 	margin-right: 100px;
 }
 
-#hometitle, #web1kill, #aboutmetitle {
+#hometitle, #web1kill, #aboutmetitle, #portraititle, #stilltitle, #design1 {
 	font-size: 50px;
 	color: #064159;
 	font-family: 'Source Serif Pro', serif;
@@ -331,4 +331,30 @@ input[type=submit]:hover {
    left: 0;
    top: 0;
    bottom: 0;
+}
+
+
+
+.portraits, .stillife {
+	display: block;
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+.small {
+	width: 180px;
+	height: auto;
+	position: relative;
+	margin: 3px;
+	border-radius: 5px;
+}
+.small:hover {
+	-webkit-transform: scale(1.03, 1.03);
+	transform: scale(1.03, 1.03);
+}
+
+a div {
+	position: relative;
+	margin: auto auto;
+	text-align: center;
 }
