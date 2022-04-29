@@ -30,7 +30,7 @@ body{
 	margin-right: 100px;
 }
 
-#hometitle, #web1kill{
+#hometitle, #web1kill, #aboutmetitle {
 	font-size: 50px;
 	color: #064159;
 	font-family: 'Source Serif Pro', serif;
@@ -201,6 +201,10 @@ li a:hover:not(.active) {
   color: white;
 }
 
+#buttkill{
+		text-align: center;
+}
+
 .webutton{
   align-items: center;
   appearance: none;
@@ -221,7 +225,6 @@ li a:hover:not(.active) {
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
-  text-align: left;
   text-decoration: none;
   transition: box-shadow .15s,transform .15s;
   user-select: none;
@@ -246,84 +249,86 @@ li a:hover:not(.active) {
   transform: translateY(2px);
 }
 
-#logo,#stylescape,#sitemap, #wireframe {
+dl{
+	display: block;
+	padding: 40px;
+	background:#237090;
+	text-align: center;
+	
+}
+dt img{
+	display:table;
+    margin:0px auto 0px auto;
+}
+
+.half {
+  margin: 20px;
+	padding-bottom: 300px;
+            text-align: center;
+	
+}
+.half img{
+	width: 50%;
+ 	float: left; 
+     margin: 5px;
+	padding-right: 25px;
+}
+
+.half p{
+	text-align:justify;
+	padding-left: 20px;
+	white-space: pre-wrap;
+	font-size: 20px;
+	font-family: 'EB Garamond', serif;
+
+}
+
+
+#contact{
+	text-align: center
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#1A3338;
+  color:white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#9CD0E9;
+	color: #1A3338;
+}
+
+.contactform {
   border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#logo,#stylescape,#sitemap, #wireframe:hover {opacity: 0.7;}
-
-
-.modal {
-  display: none;
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%;
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
+.resume img  {
+	width: 80%;
+   height: 80%;
+	display: block;
+	padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+   right: 0;
+   left: 0;
+   top: 0;
+   bottom: 0;
 }
